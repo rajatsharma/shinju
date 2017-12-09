@@ -5,7 +5,7 @@ import uglify from 'rollup-plugin-uglify';
 import bundleSize from 'rollup-plugin-bundle-size';
 import commonjs from 'rollup-plugin-commonjs';
 
-const name = `crossgear`;
+const name = `shinju`;
 
 const plugins = [
   babel(),
