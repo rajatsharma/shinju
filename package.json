@@ -1,5 +1,5 @@
 {
-  "name": "@ho/shinju",
+  "name": "@higherorder/shinju",
   "version": "0.1.0",
   "description": "Conditional Computation with Trees",
   "main": "cjs/index.js",

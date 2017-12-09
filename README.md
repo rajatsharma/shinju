@@ -5,7 +5,7 @@ _Conditional Computation with Trees_
 #### Examples
 
 ```js
-import Shinju from '@ho/shinju';
+import Shinju from '@higherorder/shinju';
 
 const MutableTree = Shinju();
 MutableTree.add(35, 'rollNo');
@@ -13,7 +13,7 @@ console.log(MutableTree.getTree()['rollNo']); //=> 35;
 ```
 
 ```js
-import Shinju from '@ho/shinju';
+import Shinju from '@higherorder/shinju';
 
 const ImmutableTree = Shinju();
 
