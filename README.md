@@ -22,6 +22,10 @@ console.log(NewTree.getTree()); //=> { sapId: 500023356, rollNo: 35 }
 console.log(ImmutableTree.getTree()); //=> {}
 ```
 
+#### Install
+
+[![NPM](https://nodei.co/npm/@higherorder/shinju.png)](https://nodei.co/npm/@higherorder/shinju/)
+
 #### Uses
 
 [![JavaScript Style Guide](https://cdn.rawgit.com/standard/standard/master/badge.svg)](https://github.com/standard/standard)
