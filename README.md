@@ -2,6 +2,8 @@
 
 _Conditional Computation with Trees_
 
+[![Build Status](https://travis-ci.org/rajatsharma305/shinju.svg?branch=master)](https://travis-ci.org/rajatsharma305/shinju)
+[![Coverage Status](https://coveralls.io/repos/github/rajatsharma305/shinju/badge.svg)](https://coveralls.io/github/rajatsharma305/shinju)
 #### Examples
 
 ```js
@@ -24,7 +26,7 @@ console.log(ImmutableTree.getTree()); //=> {}
 
 #### Install
 
-[![NPM](https://nodei.co/npm/@higherorder/shinju.png)](https://nodei.co/npm/@higherorder/shinju/)
+[![npm version](https://badge.fury.io/js/%40higherorder%2Fshinju.svg)](https://www.npmjs.com/package/@higherorder/shinju)
 
 #### Uses
 
