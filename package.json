@@ -34,7 +34,6 @@
   "keywords": [],
   "author": "Rajat Sharma (rajatsharma0720@gmail.com)",
   "license": "MIT",
-  "repository": "rajatsharma305/shinju",
   "devDependencies": {
     "babel-cli": "^6.18.0",
     "babel-core": "^6.17.0",

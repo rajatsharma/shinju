@@ -11,7 +11,7 @@ import Shinju from '@higherorder/shinju';
 
 const MutableTree = Shinju();
 MutableTree.add(35, 'rollNo');
-console.log(MutableTree.getTree()['rollNo']); //=> 35;
+console.log(MutableTree.getTree().get('rollNo')); //=> 35;
 ```
 
 ```js

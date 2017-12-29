@@ -13,7 +13,11 @@ function Shinju (defaultTree = {}) {
     return Shinju({ ...tree, [itemLens]: item })
   }
 
-  return { add, getTree, addChain }
+  function get (i) {
+    return tree[i]
+  }
+
+  return { add, getTree, addChain, get }
 }
 
 export default Shinju
