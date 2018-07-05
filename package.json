@@ -1,6 +1,6 @@
 {
   "name": "@higherorder/shinju",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "description": "Helps in maintaining and manipulating your application State",
   "main": "build/main.js",
   "files": ["build"],
@@ -16,9 +16,6 @@
     "coverage": "nyc ava",
     "build": "clear && NODE_ENV=production node build.js"
   },
-  "keywords": [],
-  "author": "Rajat Sharma (rajatsharma0720@gmail.com)",
-  "license": "MIT",
   "devDependencies": {
     "ava": "^0.25.0",
     "@lectro/core": "^1.1.2-alpha-17",
@@ -34,5 +31,16 @@
     "eslint-plugin-prettier": "^2.6.0",
     "prettier": "^1.13.2",
     "release-it": "^2.5.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rajatsharma305/shinju.git"
+  },
+  "keywords": ["state", "js", "immutable", "trees", "react"],
+  "author": "Rajat Sharma",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/rajatsharma305/shinju/issues"
+  },
+  "homepage": "https://github.com/rajatsharma305/shinju#readme"
 }
