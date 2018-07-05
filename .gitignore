@@ -1,6 +1,9 @@
-es
-cjs
 dist
-node_modules
+build
 coverage
+.nyc_output
+node_modules
+lerna-debug.log
 *.log
+lib
+coverage

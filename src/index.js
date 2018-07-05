@@ -2,10 +2,10 @@ function Shinju (defaultTree = {}) {
   let tree = defaultTree
   let listeners = []
 
-  function subscribe(fn){
+  function subscribe (fn) {
     listeners.push(fn)
     return () => {
-      listeners = listeners.filter(l => l !== listener)
+      listeners = listeners.filter(l => l !== fn)
     }
   }
 
@@ -26,7 +26,7 @@ function Shinju (defaultTree = {}) {
     return tree[i]
   }
 
-  return { add, getTree, addChain, get }
+  return { add, getTree, addChain, get, subscribe }
 }
 
 export default Shinju
