@@ -20,3 +20,7 @@ test('see for addChain function add a branch', t => {
     [35, 500023356],
   );
 });
+
+test('see for get function to get element', t => {
+  t.is(TestTree.get('rollNo'), 35);
+});
