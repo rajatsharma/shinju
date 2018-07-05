@@ -1,7 +1,7 @@
 {
   "name": "@higherorder/shinju",
   "version": "0.1.0",
-  "description": "Conditional Computation with Trees",
+  "description": "Helps in maintaining and manipulating your application State",
   "main": "cjs/index.js",
   "browser": "dist/shinju.js",
   "module": "es/index.js",
@@ -16,25 +16,19 @@
     "node": ">=5.0.0"
   },
   "scripts": {
-    "readme": "node ./node_modules/.bin/node-readme",
-    "prepublish": "npm run build",
-    "precommit": "npm run lint:test",
-    "prepush": "npm run lint:test",
+    "test": "ava",
+    "prepublish": "yarn build",
+    "precommit": "yarn test",
+    "prepush": "yarn test",
     "release": "release-it",
-    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
-    "lint": "npm run lint:eslint",
-    "lint:eslint": "eslint src/*.js",
-    "test": "clear && jest",
-    "test:coverage": "jest --coverage ",
-    "test:watch": "clear && jest --watch",
-    "lint:test": "npm run lint && npm run test:coverage",
     "purge": "rimraf es && rimraf cjs && rimraf dist",
-    "build": "clear && npm run lint:test && npm run purge && cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
+    "build": "clear && yarn test && npm run purge && cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
   },
   "keywords": [],
   "author": "Rajat Sharma (rajatsharma0720@gmail.com)",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^0.25.0",
     "babel-cli": "^6.18.0",
     "babel-core": "^6.17.0",
     "babel-eslint": "^7.2.3",
@@ -51,7 +45,6 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.12.0",
-    "jest": "^18.1.0",
     "release-it": "^2.5.1",
     "rimraf": "^2.5.4",
     "rollup": "^0.39.2",

@@ -1,14 +1,22 @@
 /* eslint-disable */
-const LTree = require('../src/index');
+import test from 'ava';
+
+const LTree = require('../cjs/index');
 
 const TestTree = LTree();
 
-test('see for add function add a branch', () => {
+test('see for add function add a branch', t => {
   TestTree.add(35, 'rollNo');
-  expect(TestTree.getTree()['rollNo']).toBe(35);
+  t.is(TestTree.getTree()['rollNo'], 35);
 });
 
-test('see for addChain function add a branch', () => {
-  const NewTestTree = TestTree.addChain(35, 'rollNo').addChain(500023356, 'sapId');
-  expect([NewTestTree.getTree()['rollNo'], NewTestTree.getTree()['sapId']]).toEqual([35, 500023356]);
+test('see for addChain function add a branch', t => {
+  const NewTestTree = TestTree.addChain(35, 'rollNo').addChain(
+    500023356,
+    'sapId',
+  );
+  t.deepEqual(
+    [NewTestTree.getTree()['rollNo'], NewTestTree.getTree()['sapId']],
+    [35, 500023356],
+  );
 });
