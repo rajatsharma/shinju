@@ -1,32 +1,32 @@
-function Shinju (defaultTree = {}) {
-  let tree = defaultTree
-  let listeners = []
+function Shinju(defaultTree = {}) {
+  let tree = defaultTree;
+  let listeners = [];
 
-  function subscribe (fn) {
-    listeners.push(fn)
+  function subscribe(fn) {
+    listeners.push(fn);
     return () => {
-      listeners = listeners.filter(l => l !== fn)
-    }
+      listeners = listeners.filter(l => l !== fn);
+    };
   }
 
-  function add (item, itemLens) {
-    listeners.map(x => x())
-    tree = { ...tree, [itemLens]: item }
+  function add(item, itemLens) {
+    listeners.map(x => x());
+    tree = { ...tree, [itemLens]: item };
   }
 
-  function getTree () {
-    return tree
+  function getTree() {
+    return tree;
   }
 
-  function addChain (item, itemLens) {
-    return Shinju({ ...tree, [itemLens]: item })
+  function addChain(item, itemLens) {
+    return Shinju({ ...tree, [itemLens]: item });
   }
 
-  function get (i) {
-    return tree[i]
+  function get(i) {
+    return tree[i];
   }
 
-  return { add, getTree, addChain, get, subscribe }
+  return { add, getTree, addChain, get, subscribe };
 }
 
-export default Shinju
+export default Shinju;

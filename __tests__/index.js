@@ -1,7 +1,7 @@
 /* eslint-disable */
 import test from 'ava';
 
-const LTree = require('../cjs/index');
+const LTree = require('../build/main').default;
 
 const TestTree = LTree();
 
