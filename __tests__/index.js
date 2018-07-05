@@ -24,3 +24,10 @@ test('see for addChain function add a branch', t => {
 test('see for get function to get element', t => {
   t.is(TestTree.get('rollNo'), 35);
 });
+
+test('see for subscribe', t => {
+  let a = 1;
+  TestTree.subscribe(_ => (a = 2));
+  TestTree.add(1, 2);
+  t.is(a, 2);
+});
