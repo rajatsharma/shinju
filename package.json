@@ -3,7 +3,9 @@
   "version": "0.1.2",
   "description": "Helps in maintaining and manipulating your application State",
   "main": "build/main.js",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "engines": {
     "node": ">=5.0.0"
   },
@@ -14,21 +16,23 @@
     "prepush": "yarn test",
     "release": "release-it",
     "coverage": "nyc ava",
-    "build": "clear && NODE_ENV=production node build.js"
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "build": "clear && NODE_ENV=production node build.js && yarn coverage"
   },
   "devDependencies": {
-    "ava": "^0.25.0",
     "@lectro/core": "^1.1.2-alpha-17",
     "@lectro/enhancer-buildutils": "^0.1.0-alpha-6",
     "@lectro/enhancer-commonutils": "^1.1.2-alpha-13",
-    "husky": "^0.12.0",
-    "nyc": "^12.0.2",
+    "ava": "^0.25.0",
     "babel-eslint": "^8.1.2",
+    "coveralls": "^3.0.2",
     "eslint": "4.18.2",
     "eslint-config-airbnb-base": "12.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "husky": "^0.12.0",
+    "nyc": "^12.0.2",
     "prettier": "^1.13.2",
     "release-it": "^2.5.1"
   },
@@ -36,7 +40,13 @@
     "type": "git",
     "url": "git+https://github.com/rajatsharma305/shinju.git"
   },
-  "keywords": ["state", "js", "immutable", "trees", "react"],
+  "keywords": [
+    "state",
+    "js",
+    "immutable",
+    "trees",
+    "react"
+  ],
   "author": "Rajat Sharma",
   "license": "MIT",
   "bugs": {
