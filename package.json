@@ -21,6 +21,7 @@
     "precommit": "yarn test",
     "prepush": "yarn test",
     "release": "release-it",
+    "coverage": "nyc ava",
     "purge": "rimraf es && rimraf cjs && rimraf dist",
     "build": "clear && yarn test && npm run purge && cross-env BABEL_ENV=es NODE_ENV=production rollup -c"
   },
@@ -45,6 +46,7 @@
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-standard": "^3.0.1",
     "husky": "^0.12.0",
+    "nyc": "^12.0.2",
     "release-it": "^2.5.1",
     "rimraf": "^2.5.4",
     "rollup": "^0.39.2",
