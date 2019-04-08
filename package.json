@@ -1,6 +1,6 @@
 {
   "name": "@higherorder/shinju",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "description": "Helps in maintaining and manipulating your application State",
   "main": "build/main.js",
   "files": [
@@ -11,10 +11,10 @@
   },
   "scripts": {
     "test": "ava",
+    "release": "np",
     "prepublish": "yarn build",
     "precommit": "yarn test",
     "prepush": "yarn test",
-    "release": "release-it",
     "coverage": "nyc yarn test",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "build": "NODE_ENV=production en-libstarter build"
@@ -30,9 +30,9 @@
     "eslint-plugin-import": "^2.8.0",
     "eslint-plugin-prettier": "^2.6.0",
     "husky": "^0.12.0",
+    "np": "^4.0.2",
     "nyc": "^12.0.2",
-    "prettier": "^1.13.2",
-    "release-it": "^2.5.1"
+    "prettier": "^1.13.2"
   },
   "repository": {
     "type": "git",
