@@ -36,7 +36,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rajatsharma305/shinju.git"
+    "url": "git+https://github.com/rajatsharma/shinju.git"
   },
   "keywords": [
     "state",
@@ -48,7 +48,7 @@
   "author": "Rajat Sharma",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/rajatsharma305/shinju/issues"
+    "url": "https://github.com/rajatsharma/shinju/issues"
   },
-  "homepage": "https://github.com/rajatsharma305/shinju#readme"
+  "homepage": "https://github.com/rajatsharma/shinju#readme"
 }
