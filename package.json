@@ -17,12 +17,10 @@
     "release": "release-it",
     "coverage": "nyc yarn test",
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
-    "build": "clear && NODE_ENV=production node build.js && yarn coverage"
+    "build": "NODE_ENV=production en-libstarter build"
   },
   "devDependencies": {
-    "@lectro/core": "^1.1.2-alpha-17",
-    "@lectro/enhancer-buildutils": "^0.1.0-alpha-6",
-    "@lectro/enhancer-commonutils": "^1.1.2-alpha-13",
+    "@enginite/libstarter": "^1.0.2",
     "ava": "^0.25.0",
     "babel-eslint": "^8.1.2",
     "coveralls": "^3.0.2",
